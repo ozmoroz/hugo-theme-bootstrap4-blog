@@ -1,5 +1,5 @@
 # Hugo Bootstrap v4 Blog [![Build Status](https://travis-ci.org/alanorth/hugo-theme-bootstrap4-blog.svg?branch=master)](https://travis-ci.org/alanorth/hugo-theme-bootstrap4-blog)
-A simple but opinionated [Hugo](https://gohugo.io) theme geared towards blog-style content. Based on the older two-column [Bootstrap blog example](https://v4-alpha.getbootstrap.com/examples/blog/) that was used for several Bootstrap versions, but has now been retired in favor of a "snarky" (their words) new example as of version [4.0.0's final release](https://blog.getbootstrap.com/2018/01/18/bootstrap-4/).
+A simple [Hugo](https://gohugo.io) theme based on the [Bootstrap v4 blog example](https://getbootstrap.com/docs/4.0/examples/blog). Opinionated and geared towards blog-style content.
 
 ![Screenshot](https://raw.githubusercontent.com/alanorth/hugo-theme-bootstrap4-blog/master/screenshot.png "Screenshot")
 
@@ -18,7 +18,6 @@ See [picturingjordan.com](https://picturingjordan.com) for an example of this th
 - Can show a message about cookie usage to the user, see [`exampleSite/config.toml`](https://github.com/alanorth/hugo-theme-bootstrap4-blog/blob/master/exampleSite/config.toml)
 - Allow addition of custom `<head>` code in site's `layouts/partial/head-custom.html` (see [#17](https://github.com/alanorth/hugo-theme-bootstrap4-blog/pull/17))
 - Configurable display of summaries of content in list templates.
-- configurable keywords for every post
 
 ## Usage
 Clone the repository to your site's `themes` directory. Refer to [`exampleSite/config.toml`](https://github.com/alanorth/hugo-theme-bootstrap4-blog/blob/master/exampleSite/config.toml) for recommended configuration values.

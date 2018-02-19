@@ -2,6 +2,8 @@
 // see: node_modules/font-awesome/scss/font-awesome.scss
 @import 'source/scss/font-awesome';
 
+// Import a customized flatly bootswatch theme
+@import 'source/scss/flatly_variables.scss';
 // selectively import components we need from bootstrap
 // see: node_modules/bootstrap/scss/bootstrap.scss
 @import 'source/scss/bootstrap';
