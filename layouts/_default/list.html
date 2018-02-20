@@ -39,6 +39,8 @@
 {{ end }}
 {{ end }}
 
+{{/* partial "pagination.html" .  */}}
+
 {{ if or (.Paginator.HasPrev) (.Paginator.HasNext) }}
 <nav class="blog-pagination">
   {{ if and (.Paginator.HasPrev) (.Paginator.HasNext) }}
