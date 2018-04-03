@@ -81,16 +81,16 @@ $navbar-dark-hover-color: $success !default;
 
 // Pagination
 
-$pagination-color: $white !default;
-$pagination-bg: $success !default;
+$pagination-color: unset;
+$pagination-bg: unset;
 $pagination-border-width: 0 !default;
 $pagination-border-color: transparent !default;
 
-$pagination-hover-color: $white !default;
-$pagination-hover-bg: darken($success, 15%) !default;
+$pagination-hover-color: unset;
+$pagination-hover-bg: $gray-400;
 $pagination-hover-border-color: transparent !default;
 
-$pagination-active-bg: $pagination-hover-bg !default;
+$pagination-active-bg: darken($success, 15%) !default;
 $pagination-active-border-color: transparent !default;
 
 $pagination-disabled-color: $gray-200 !default;

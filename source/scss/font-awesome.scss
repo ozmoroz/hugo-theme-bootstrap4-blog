@@ -17,6 +17,12 @@
 //@import "icons";
 // selectively import icons we need from font-awesome
 // see: node_modules/font-awesome/scss/_icons.scss
+.#{$fa-css-prefix}-angle-left:before {
+  content: $fa-var-angle-left;
+}
+.#{$fa-css-prefix}-angle-right:before {
+  content: $fa-var-angle-right;
+}
 .#{$fa-css-prefix}-tag:before {
   content: $fa-var-tag;
 }
