@@ -86,6 +86,7 @@
   {{ if or (ne ($.Param "sharingicons") false) (.Site.DisqusShortname) }}
   <hr>
   <footer>
+  {{ partial "mailchimp/signup-form.html" .}}
 
   {{ if (ne ($.Param "sharingicons") false) }}
   {{ partial "sharing-icons.html" . }}
