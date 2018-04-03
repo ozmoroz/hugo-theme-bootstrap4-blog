@@ -226,6 +226,18 @@ article div.highlight {
 }
 
 /*
+ * Blog Archives
+ */
+
+#blog-archives {
+  time {
+    color: $gray-700;
+    margin-right: 2.5rem;
+  }
+  margin-bottom: 4rem;
+}
+
+/*
  * Footer
  */
 
