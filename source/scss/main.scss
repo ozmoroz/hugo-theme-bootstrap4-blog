@@ -7,8 +7,18 @@
  * Globals
  */
 
-@media (min-width: 48em) {
-  html {
+html {
+  // @media (max-width: 767px) {
+  //   font-size: 19px;
+  // }
+  // @media (min-width: 768px) {
+  //   font-size: 18px;
+  // }
+
+  @include media-breakpoint-down('sm') {
+    font-size: 19px;
+  }
+  @include media-breakpoint-up('md') {
     font-size: 18px;
   }
 }
