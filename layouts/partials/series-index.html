@@ -1,16 +1,16 @@
 {{ if .Params.series }}
-  {{ $seriesName := index .Params.series 0 }}    
+  {{ $seriesName := index .Params.series 0 }}
   {{ $series := index .Site.Taxonomies.series ($seriesName | urlize) }}
-  {{ $articleIndex := 0 }}
+  {{ $pageTitle := .LinkTitle }}
 
-  {{range $index, $element := $series.Pages.ByDate }}      
-    {{ if eq $element.LinkTitle .LinkTitle}}
-        {{ $articleIndex := $index }}        
+  {{range $index, $element := $series.Pages.ByDate }}
+    {{ if eq $element.LinkTitle $pageTitle}}
+       {{ $.Scratch.Set "articleIndex" $index }}
     {{ end }}
-  {{end}}    
+  {{end}}
 
   <section class="related-posts">
-    <h4>Part {{ add $articleIndex 1 }} of series "{{$seriesName}}"</h4>
+    <h4>Part {{ add ($.Scratch.Get "articleIndex") 1 }} of series "{{$seriesName}}"</h4>
 
     {{ $previousArticles := where $series.Pages.ByDate ".Date.Unix" "lt" .Date.Unix }}
     {{ if gt (len $previousArticles) 0 }}
@@ -32,4 +32,4 @@
       </ul>
     {{ end }}
   </section>
-{{ end }}  
+{{ end }}
