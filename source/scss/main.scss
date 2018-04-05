@@ -164,7 +164,12 @@ h6,
 
 .blog-main {
   margin-top: 2rem;
-  padding: 0;
+  @include media-breakpoint-down('md') {
+    padding: 0 15px;
+  }
+  @include media-breakpoint-up('lg') {
+    padding: 0;
+  }
 }
 
 /* Sidebar modules for boxing content */
